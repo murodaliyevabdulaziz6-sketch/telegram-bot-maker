@@ -1,0 +1,285 @@
+{
+  "users": {
+    "8825408278": {
+      "id": 8825408278,
+      "username": "Owner",
+      "first_name": "Abdulaziz",
+      "registered_at": "2026-09-18T12:00:00.000Z",
+      "tariff": "unlimited_forever",
+      "balance": 999999999,
+      "trial_ends_at": "2036-09-18T12:00:00.000Z",
+      "subscription_ends_at": "2099-09-18T12:00:00.000Z",
+      "referred_by": null,
+      "referrals_count": 0,
+      "referral_earnings": 0,
+      "last_bonus_at": null,
+      "status": "active",
+      "notified_5h": false,
+      "notified_expired": false,
+      "notified_deleted": false
+    },
+    "8422157752": {
+      "id": 8422157752,
+      "username": "ISMOILUZB0222",
+      "first_name": "I̷S̷M̷O̷I̷L̷ & D̷A̷S̷T̷U̷R̷C̷H̷I̷",
+      "registered_at": "2026-09-11T09:34:50.973Z",
+      "tariff": "unlimited_forever",
+      "balance": 0,
+      "trial_ends_at": "2026-09-14T09:34:50.973Z",
+      "subscription_ends_at": "2036-09-10T10:15:03.373Z",
+      "referred_by": null,
+      "referrals_count": 0,
+      "referral_earnings": 0,
+      "last_bonus_at": null,
+      "status": "active",
+      "notified_5h": false,
+      "notified_expired": false,
+      "notified_deleted": false
+    },
+    "8845199071": {
+      "id": 8845199071,
+      "username": "Fayzullousa",
+      "first_name": "Fayzullo",
+      "registered_at": "2026-09-11T09:36:43.714Z",
+      "tariff": "free_trial",
+      "balance": 0,
+      "trial_ends_at": "2026-09-01T00:00:00.000Z",
+      "subscription_ends_at": "2026-09-01T00:00:00.000Z",
+      "referred_by": null,
+      "referrals_count": 0,
+      "referral_earnings": 0,
+      "last_bonus_at": "2026-09-12T10:03:20.411Z",
+      "status": "active",
+      "notified_5h": false,
+      "notified_expired": false,
+      "notified_deleted": false
+    },
+    "1789282525610": {
+      "id": 1789282525610,
+      "username": "testuser",
+      "first_name": "Test",
+      "registered_at": "2026-09-13T06:55:25.610Z",
+      "tariff": "pro_month",
+      "balance": 0,
+      "trial_ends_at": "2026-09-16T06:55:25.610Z",
+      "subscription_ends_at": "2026-10-16T06:55:25.610Z",
+      "referred_by": null,
+      "referrals_count": 0,
+      "referral_earnings": 0,
+      "last_bonus_at": null,
+      "status": "active",
+      "notified_5h": false,
+      "notified_expired": false,
+      "notified_deleted": false
+    },
+    "1789282544260": {
+      "id": 1789282544260,
+      "username": "testuser",
+      "first_name": "Test",
+      "registered_at": "2026-09-13T06:55:44.260Z",
+      "tariff": "pro_month",
+      "balance": 0,
+      "trial_ends_at": "2026-09-16T06:55:44.260Z",
+      "subscription_ends_at": "2026-10-26T06:55:44.260Z",
+      "referred_by": null,
+      "referrals_count": 0,
+      "referral_earnings": 0,
+      "last_bonus_at": null,
+      "status": "active",
+      "notified_5h": false,
+      "notified_expired": false,
+      "notified_deleted": false
+    },
+    "1789282553045": {
+      "id": 1789282553045,
+      "username": "testuser",
+      "first_name": "Test",
+      "registered_at": "2026-09-13T06:55:53.045Z",
+      "tariff": "pro_month",
+      "balance": 0,
+      "trial_ends_at": "2026-09-16T06:55:53.045Z",
+      "subscription_ends_at": "2026-10-11T06:55:53.045Z",
+      "referred_by": null,
+      "referrals_count": 0,
+      "referral_earnings": 0,
+      "last_bonus_at": null,
+      "status": "active",
+      "notified_5h": false,
+      "notified_expired": false,
+      "notified_deleted": false
+    },
+    "1789289309369": {
+      "id": 1789289309369,
+      "username": "testuser",
+      "first_name": "Test",
+      "registered_at": "2026-09-13T08:48:29.370Z",
+      "tariff": "pro_month",
+      "balance": 0,
+      "trial_ends_at": "2026-09-16T08:48:29.370Z",
+      "subscription_ends_at": "2026-10-11T08:48:29.370Z",
+      "referred_by": null,
+      "referrals_count": 0,
+      "referral_earnings": 0,
+      "last_bonus_at": null,
+      "status": "active",
+      "notified_5h": false,
+      "notified_expired": false,
+      "notified_deleted": false
+    }
+  },
+  "bots": {
+    "bot_1789119384525_967": {
+      "id": "bot_1789119384525_967",
+      "owner_id": 8422157752,
+      "template": "nakrutka",
+      "bot_username": "tekshitrbot",
+      "bot_first_name": "bot tekshiruv",
+      "bot_id": 8894325353,
+      "status": "running",
+      "created_at": "2026-09-11T09:36:24.525Z",
+      "stats": {
+        "users_count": 0,
+        "messages_count": 2
+      },
+      "data": {
+        "orders": [
+          {
+            "id": 1,
+            "userId": 8422157752,
+            "userFirstName": "I̷S̷M̷O̷I̷L̷ & D̷A̷S̷T̷U̷R̷C̷H̷I̷",
+            "username": "@ISMOILUZB0222",
+            "serviceKey": "tg_react",
+            "serviceName": "Telegram Reaksiya (👍❤️🔥) (👍)",
+            "link": "https://t.me/MAKERRBOTKANALI/7",
+            "count": 100,
+            "unitPrice": 5,
+            "totalCost": 500,
+            "status": "Bajarildi ✅",
+            "apiOrderId": null,
+            "reaction": "👍",
+            "createdAt": "11/09/2026, 14:36:45"
+          },
+          {
+            "id": 2,
+            "userId": 8422157752,
+            "userFirstName": "I̷S̷M̷O̷I̷L̷ & D̷A̷S̷T̷U̷R̷C̷H̷I̷",
+            "username": "@ISMOILUZB0222",
+            "serviceKey": "tg_view",
+            "serviceName": "Telegram Post ko'rish (100+ ta) (👍)",
+            "link": "https://t.me/MAKERRBOTKANALI/8",
+            "count": 500,
+            "unitPrice": 3,
+            "totalCost": 1500,
+            "status": "Bajarildi ✅",
+            "apiOrderId": null,
+            "reaction": "👍",
+            "createdAt": "11/09/2026, 14:41:34"
+          }
+        ],
+        "users": [
+          8422157752
+        ],
+        "balances": {
+          "8422157752": 98000
+        },
+        "smmApiUrl": "https://peakerr.com/api/v2",
+        "smmApiKey": "f148ed4357267a745937d2808870066f",
+        "paymentCard": "8600 **** **** ****",
+        "cardHolder": "bot tekshiruv",
+        "required_channels": [],
+        "serviceMapping": {
+          "tg_view": 15974,
+          "tg_react": 18339,
+          "tg_sub": 31702,
+          "tg_vote": 13420,
+          "inst_view": 31766,
+          "inst_sub": 36571,
+          "inst_like": 31904,
+          "inst_comm": 204,
+          "tt_view": 36645,
+          "tt_sub": 402,
+          "tt_like": 403,
+          "tt_share": 404,
+          "yt_view": 32021,
+          "yt_sub": 301,
+          "yt_like": 303,
+          "yt_comm": 304
+        },
+        "ref_counts": {},
+        "ref_earnings": {},
+        "referrals_claimed": {},
+        "daily_bonus_time": {}
+      }
+    },
+    "bot_1789282057263_304": {
+      "id": "bot_1789282057263_304",
+      "owner_id": 8845199071,
+      "template": "nakrutka",
+      "bot_username": "Seen_SmS_UzBot",
+      "bot_first_name": "Bot",
+      "bot_id": 8974994306,
+      "status": "stopped",
+      "created_at": "2026-09-13T06:47:37.263Z",
+      "stats": {
+        "users_count": 0,
+        "messages_count": 0
+      },
+      "data": {
+        "orders": [],
+        "users": [
+          8845199071
+        ],
+        "balances": {
+          "8845199071": 100000
+        },
+        "smmApiUrl": "https://peakerr.com/api/v2",
+        "smmApiKey": "f148ed4357267a745937d2808870066f",
+        "paymentCard": "8600 **** **** ****",
+        "cardHolder": "Bot",
+        "required_channels": [],
+        "serviceMapping": {
+          "tg_view": 15974,
+          "tg_react": 18339,
+          "tg_sub": 31702,
+          "tg_vote": 13420,
+          "inst_view": 31766,
+          "inst_sub": 36571,
+          "inst_like": 31904,
+          "inst_comm": 204,
+          "tt_view": 36645,
+          "tt_sub": 402,
+          "tt_like": 403,
+          "tt_share": 404,
+          "yt_view": 32021,
+          "yt_sub": 301,
+          "yt_like": 303,
+          "yt_comm": 304
+        },
+        "ref_counts": {},
+        "ref_earnings": {},
+        "referrals_claimed": {},
+        "daily_bonus_time": {}
+      }
+    }
+  },
+  "admins": [
+    8825408278
+  ],
+  "payments": {
+    "pay_1788525813808_315": {
+      "id": "pay_1788525813808_315",
+      "user_id": 8422157752,
+      "tariff_id": "vip_year",
+      "tariff_name": "VIP Premium (Cheksiz / 1 Yillik)",
+      "amount": 150000,
+      "photo_id": "AgACAgIAAxkBAAIBPWqavPUKW53IlHQp04gasupnJM-yAAJpHmsb4c_ZSBeSyg-irwixAQADAgADeQADPQQ",
+      "status": "approved",
+      "created_at": "2026-09-04T12:43:33.808Z",
+      "approved_at": "2026-09-04T12:43:36.367Z"
+    }
+  },
+  "settings": {
+    "webapp_public": true
+  },
+  "activity_logs": []
+}
