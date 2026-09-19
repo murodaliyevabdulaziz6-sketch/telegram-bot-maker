@@ -159,6 +159,13 @@ function startDirectTunnel(port) {
   run();
 }
 
+process.on('uncaughtException', (err) => {
+  console.error('🚨 [Uncaught Exception]:', err.message || err);
+});
+process.on('unhandledRejection', (reason) => {
+  console.error('🚨 [Unhandled Rejection]:', (reason && reason.message) || reason);
+});
+
 http.createServer((req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
@@ -167,6 +174,12 @@ http.createServer((req, res) => {
   if (req.method === 'OPTIONS') {
     res.writeHead(204);
     return res.end();
+  }
+
+  // Health check endpoint for Render & external pinger
+  if (req.url === '/healthz' || req.url === '/ping') {
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    return res.end(JSON.stringify({ status: 'ok', service: 'telegram-bot-maker', uptime: process.uptime(), time: new Date().toISOString() }));
   }
 
   const handledSmm = smmWebapp.handleSmmWebAppRequests(req, res);
@@ -183,12 +196,16 @@ http.createServer((req, res) => {
 });
 
 const https = require('https');
-const RENDER_PUBLIC_URL = process.env.RENDER_EXTERNAL_URL || 'https://telegram-bot-maker-v2.onrender.com';
+const RENDER_PUBLIC_URL = process.env.RENDER_EXTERNAL_URL || 'https://telegram-bot-maker-live.onrender.com';
 setInterval(() => {
-  // Tashqi URL ni uyg'oq saqlash
-  https.get(RENDER_PUBLIC_URL, (res) => {}).on('error', () => {});
-  // Mahalliy serverni 24/7 uyg'oq saqlash
-  http.get('http://localhost:' + PORT, (res) => {}).on('error', () => {});
+  try {
+    // Tashqi URL ni uyg'oq saqlash (Render free tier sleep oldini olish)
+    if (RENDER_PUBLIC_URL) {
+      https.get(RENDER_PUBLIC_URL + '/healthz', (res) => {}).on('error', () => {});
+    }
+    // Mahalliy serverni uyg'oq saqlash
+    http.get('http://127.0.0.1:' + PORT + '/healthz', (res) => {}).on('error', () => {});
+  } catch (e) {}
 }, 2 * 60 * 1000);
 
 
